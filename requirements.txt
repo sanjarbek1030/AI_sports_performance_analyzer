@@ -1,0 +1,8 @@
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+opencv-python>=4.8
+matplotlib>=3.7
+ultralytics>=8.1
+# torch is installed as an Ultralytics dependency; install a CUDA build from pytorch.org for GPU.
+pytest>=7.4   # tests only
