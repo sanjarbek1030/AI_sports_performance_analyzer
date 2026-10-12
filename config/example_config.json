@@ -1,0 +1,36 @@
+{
+  "_comment": "Only the keys you want to change are required. Unknown keys are rejected.",
+  "sport": "football",
+  "paths": { "input_video": "input/sports_input.mp4", "output_dir": "output" },
+  "video": {
+    "process_width": 1280,
+    "analysis_stride": 1,
+    "batch_size": 4
+  },
+  "detection": {
+    "player_model": "yolov8m.pt",
+    "ball_model": null,
+    "confidence_threshold": 0.35,
+    "iou_threshold": 0.5,
+    "device": "auto"
+  },
+  "tracking": { "tracker": "bytetrack", "track_buffer_s": 2.0 },
+  "field": {
+    "field_length": 105.0,
+    "field_width": 68.0,
+    "calibration_file": "config/calibration.json",
+    "team_a_attacks_positive_x": true,
+    "attack_direction_switch_s": null
+  },
+  "possession": { "possession_radius": 2.0 },
+  "movement": {
+    "smoothing_method": "savgol",
+    "sprint_threshold": 25.2,
+    "min_sprint_duration": 1.0
+  },
+  "visualization": {
+    "debug_mode": false,
+    "trail_length": 50,
+    "team_names": ["Team A", "Team B"]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "_comment": "Image points are pixels in the ORIGINAL video; landmarks name the matching pitch points (see scripts/select_calibration_points.py for the full list). Use >= 4 well-spread points.",
+  "frame_size": [1920, 1080],
+  "image_points": [[212, 330], [1710, 322], [1905, 880], [30, 902], [960, 505]],
+  "landmarks": ["corner_top_left", "corner_top_right", "corner_bottom_right", "corner_bottom_left", "center_spot"]
+}
